@@ -1,12 +1,26 @@
 /* Top layer */
 
-.svg-img {
+.svg-sidebar {
     height: 1.5rem;
     filter: invert(98%) sepia(10%) saturate(0%) hue-rotate(53deg) brightness(111%) contrast(100%);
     justify-self: center;
 }
 
-h1, h2, h3 {
+.svg-main {
+    height: 1.5rem;
+    filter: invert(0%) sepia(0%) saturate(7467%) hue-rotate(305deg) brightness(100%) contrast(107%);
+    align-self: center;
+}
+
+.user-icon-small {
+    height: 3rem;
+}
+
+.user-icon-large {
+    height: 5rem;
+}
+
+h1, h2, h3, h4 {
     margin: 0%;
 }
 
@@ -82,4 +96,68 @@ body {
     grid-template-columns: fit-content(0) 2.5fr;
         gap: 1rem;
     text-decoration: none;
+}
+
+/*  Header */
+
+.header-upper,
+.header-lower {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 1rem 2rem;
+    gap: 20rem;
+}
+
+.search-section {
+    display: grid;
+    grid-template-columns: fit-content(0) 1fr;  
+    gap: 0.5rem;
+}
+
+#greeting-section {
+    display: grid;
+    grid-template: fit-content(0) fit-content(0) / fit-content(0) 300px;
+    gap: 0.5rem 1rem;
+}
+
+#searchbar {
+    height: 2rem;
+    background-color: #E2E8F0;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.account-nav {
+    display: grid;
+    grid-template-columns: fit-content(0) fit-content(0) fit-content(300px);
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+#greeting-section > .user-icon-large {
+    grid-row: 1 / span 2;
+}
+
+#greeting-section > h4 {
+    align-self: flex-end;
+}
+
+#header-button-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-button {
+    height: 3rem;
+    width: 8rem;
+    background-color: #1992D4;
+    color: #FFF;
+    font-weight: 600;
+    font-size: large;
+    font-family: Helvetica;
+    border: none;
+    border-radius: 1.5rem;
 }
